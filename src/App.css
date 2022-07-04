@@ -1,0 +1,41 @@
+.App{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 50px;
+
+}
+.firstComponent{
+  padding: 20px;
+  border: 4px dashed black;
+}
+@media screen and (min-width: 700px) {
+  .App{
+    display: block;
+  }
+  .firstComponent{
+    color: red;
+  }
+}
+@media screen and (min-width: 900px) {
+  
+  .firstComponent{
+    color: green;
+  }
+}
+@keyframes  example {
+    0%{
+      transform: translateX(0px) translateY(0px);
+    }
+  25%{
+    transform: translateY(300px);
+  }
+  }
+
+.animated{
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 4;
+}
+  
+
